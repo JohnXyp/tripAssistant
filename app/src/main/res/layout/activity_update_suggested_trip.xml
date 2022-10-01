@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateSuggestedTrip">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_trips_update"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:padding="20dp"
+        app:helperText="Mandatory*"
+        app:helperTextTextColor="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/label_trips_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose your Trip:"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/trips_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/venice_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Venice, Italy"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+            <RadioButton
+                android:id="@+id/vienna_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vienna, Austria"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+            <RadioButton
+                android:id="@+id/prague_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Prague, Czech Republic"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+            <RadioButton
+                android:id="@+id/berlin_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Berlin, Germany"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+            <RadioButton
+                android:id="@+id/barcelona_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Barcelona, Spain"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+            <RadioButton
+                android:id="@+id/paris_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Paris, France"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+        </RadioGroup>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_days_update"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:helperText="Mandatory*"
+        app:helperTextTextColor="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_trips_update">
+
+        <EditText
+            android:id="@+id/days_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Days [2-6]"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_update_st"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/teal_700"
+        android:padding="12dp"
+        android:text="Update"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/ic_edit"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_days_update" />
+</androidx.constraintlayout.widget.ConstraintLayout>

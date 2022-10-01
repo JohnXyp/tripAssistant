@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tripassistant">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TripAssistant">
+        <activity
+            android:name=".UpdateTripPackage"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateSuggestedTrip"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateTravelAgency"
+            android:exported="false" />
+        <activity
+            android:name=".Saved3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Saved2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ParisMap"
+            android:exported="false" />
+        <activity
+            android:name=".BarcelonaMap"
+            android:exported="false" />
+        <activity
+            android:name=".BerlinMapp"
+            android:exported="false" />
+        <activity
+            android:name=".PragueMap"
+            android:exported="false" />
+        <activity
+            android:name=".ViennaMap"
+            android:exported="false" />
+        <activity
+            android:name=".VeniceMap"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name=".FormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BarcelonaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BerlinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PragueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViennaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VeniceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SavedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

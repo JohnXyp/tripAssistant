@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".FormActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:text="   Visitor Details"
+        android:textStyle="bold"
+        android:textSize="23dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_username"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        app:helperText="Mandatory*"
+        app:helperTextTextColor="@color/teal_700"
+        app:startIconDrawable="@drawable/ic_username">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Username"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_mobile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:endIconMode="clear_text"
+        app:helperText="Mandatory*"
+        app:helperTextTextColor="@color/teal_700"
+        app:prefixText="+30"
+        app:startIconDrawable="@drawable/ic_mobile">
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mobile"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="10"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_gmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:endIconMode="custom"
+        app:helperText="Mandatory*"
+        app:helperTextTextColor="@color/teal_700"
+        app:startIconDrawable="@drawable/ic_gmail">
+
+        <EditText
+            android:id="@+id/gmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Gmail"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:text="   Trip Details"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:layout_marginTop="15dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_trips"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:helperText="Mandatory*"
+        app:helperTextTextColor="@color/teal_700">
+
+        <TextView
+            android:id="@+id/label_trips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose your Trip:"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/trips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/venice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Venice, Italy"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
+            <RadioButton
+                android:id="@+id/vienna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vienna, Austria"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
+            <RadioButton
+                android:id="@+id/prague"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Prague, Czech Republic"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
+            <RadioButton
+                android:id="@+id/berlin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Berlin, Germany"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
+            <RadioButton
+                android:id="@+id/barcelona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Barcelona, Spain"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
+            <RadioButton
+                android:id="@+id/paris"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Paris, France"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
+        </RadioGroup>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_travelAgencies"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:helperText="Mandatory*"
+        app:helperTextTextColor="@color/teal_700">
+
+        <TextView
+            android:id="@+id/label_travelAgencies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose Travel Agency's Package:"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/travel_agencies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/oik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Oikonomidis Tours - Apartments"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
+            <RadioButton
+                android:id="@+id/xypt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Xypterakis Tourist Organization - Hotels"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
+         <RadioButton
+                 android:id="@+id/panag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Panagiotakopoulos Travel Agency - Rooms"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
+        </RadioGroup>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_calendar"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        app:helperTextTextColor="@color/teal_700"
+        app:helperText="Mandatory*">
+
+        <TextView
+            android:id="@+id/label_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose Departure Date:"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <CalendarView
+            android:id="@+id/date"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CalendarView>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_days"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:helperText="Mandatory*"
+        app:helperTextTextColor="@color/teal_700">
+
+        <EditText
+            android:id="@+id/days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Days [2-6]"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/label_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total Package Price:"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_price"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:backgroundTint="@color/black"
+            android:padding="12dp"
+            android:text="Check Price"
+            app:icon="@drawable/ic_price"
+            app:iconGravity="textStart" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="price"
+            android:imeOptions="actionNext"
+            android:textStyle="bold"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear"
+        android:text="Clear all"
+        android:backgroundTint="#C60500"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/ic_clear"
+        app:iconGravity="textStart"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="Submit"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/ic_submit"
+        app:iconGravity="textStart"/>
+</LinearLayout>
+</ScrollView>

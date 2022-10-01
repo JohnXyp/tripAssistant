@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1090086168249",
+    "project_id": "tripassistantihu",
+    "storage_bucket": "tripassistantihu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090086168249:android:849515139160474c005d68",
+        "android_client_info": {
+          "package_name": "com.example.tripassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090086168249-ivjf6abqieasboqr81546pkj4drk55dv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI-0maAyFOHUHcdxI5YaG8Fqw2SW7GgRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090086168249-ivjf6abqieasboqr81546pkj4drk55dv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
